@@ -15,16 +15,30 @@ public class StringPoolTest {
 		// StringPoolTest stringPoolTest = new StringPoolTest();
 		// stringPoolTest.testStringPoolWithLongString();
 
-		String str1 = "Hello";
-		String str2 = new String("Hello");
-		System.out.println(str1 == str2.intern());
-		String s1 = new String("ab");
-		s1.intern();
-		String s3 = new String("ab");
-		s3.intern();
-		String s4 = "ab";
+		 String str2 = new String("Hello");
+		 String str1 = "Hello";
+		 System.out.println(str1 == str2.intern());
+		 String s1 = new String("ab");
+		 s1.intern();
+		 String s3 = new String("ab");
+		 s3.intern();
+		 String s4 = "ab";
 
-		System.out.println(s1 == s4);
-		System.out.println(s3 == s4);
+		 System.out.println(s1 == s4);
+		 System.out.println(s3 == s4);
+
+//		String str1 = new StringBuilder("¼ÆËã»ú").append("Èí¼þ").toString();
+//		System.out.println(str1.intern() == str1);
+//
+//		String str2 = new StringBuilder("ja").append("va").toString();
+//		System.out.println(str2.intern() == str2);
+//		
+//		String str3 = new StringBuilder("ja").append("va1").toString();
+//		System.out.println(str3.intern() == str3);
+		 
+		 System.out.println(Runtime.getRuntime().maxMemory());
+		 System.out.println(Runtime.getRuntime().freeMemory());
+		 System.out.println(Runtime.getRuntime().totalMemory());  
+		 
 	}
 }
