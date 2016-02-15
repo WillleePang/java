@@ -18,9 +18,10 @@ public class Test {
 		}
 
 		// String∂‘°∞+°±µƒ÷ÿ‘ÿ
-		String s3 = "willlee";
-		String s4 = s3 + "pang";
-		// String s4 = (new StringBuilder(String.valueOf(string))).append("pang").toString();
+		// String s3 = "willlee";
+		// String s4 = s3 + "pang";
+		// String s4 = (new
+		// StringBuilder(String.valueOf("string"))).append("pang").toString();
 
 		int i = 5;
 		String i1 = "" + i;
