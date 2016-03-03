@@ -51,6 +51,7 @@ public class StackTriangleApp {
 		theNumber = getInt();
 		recTriangle();
 		System.out.println("Triangle = " + theAnswer);
+		
 	}
 
 	public static void recTriangle() {
