@@ -1,4 +1,4 @@
-package com.willlee.redis;
+package com.willlee.redisdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
