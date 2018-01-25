@@ -7,10 +7,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.willlee.springbootdemo.WillleeApplication;
+import com.willlee.springbootdemo.Application;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = WillleeApplication.class)
+@SpringBootTest(classes = Application.class)
 public class RedisApplicationTests {
 
 	@Autowired
