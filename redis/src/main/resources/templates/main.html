@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div style="text-align: center">
+		<h1>通讯列表</h1>
+		<table>
+			<tr>
+				<td>昵称</td>
+				<td>操作</td>
+			</tr>
+			<tr th:each="learn : ${friendList}">
+				<td th:text="${friend.nickname}"></td>
+				<td><a target="_blank"></a></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
