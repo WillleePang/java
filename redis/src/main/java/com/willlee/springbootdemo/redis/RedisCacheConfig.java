@@ -1,4 +1,4 @@
-package com.willlee.redisdemo;
+package com.willlee.springbootdemo.redis;
 
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.context.annotation.Bean;

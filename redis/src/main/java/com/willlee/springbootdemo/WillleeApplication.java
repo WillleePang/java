@@ -1,4 +1,4 @@
-package com.willlee.redisdemo;
+package com.willlee.springbootdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
