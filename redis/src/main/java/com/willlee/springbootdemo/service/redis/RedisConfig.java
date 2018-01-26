@@ -1,4 +1,4 @@
-package com.willlee.springbootdemo.redis;
+package com.willlee.springbootdemo.service.redis;
 
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Configuration
-public class RedisCacheConfig extends CachingConfigurerSupport {
+public class RedisConfig extends CachingConfigurerSupport {
 	@Bean
 	public StringRedisTemplate stringRedisTemplate(RedisConnectionFactory factory) {
 		StringRedisTemplate redisTemplate = new StringRedisTemplate();

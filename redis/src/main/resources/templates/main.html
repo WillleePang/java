@@ -5,18 +5,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-	<div style="text-align: center">
-		<h1>通讯列表</h1>
-		<table>
+	<div>
+		<table border="1px" title="lalal">
 			<tr>
 				<td>昵称</td>
-				<td>操作</td>
 			</tr>
-			<tr th:each="learn : ${friendList}">
+			<tr th:each="friend : ${friendList}">
 				<td th:text="${friend.nickname}"></td>
-				<td><a target="_blank"></a></td>
 			</tr>
 		</table>
+	</div>
+	<div>
+		<textarea rows="20" cols="50"></textarea>
+		<br /> 
+		<input type="text" /> 
+		<input type="button" value="send" />
 	</div>
 </body>
 </html>

@@ -32,7 +32,7 @@ public class ControllerConfigAdpater extends WebMvcConfigurerAdapter {
 	 */
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		//registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns("/toLogin", "/login");
+		registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns("/**");
 		super.addInterceptors(registry);
 	}
 }
