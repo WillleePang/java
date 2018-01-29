@@ -1,25 +1,84 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Demo</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="pangwilllee" />
+<meta name="keywords" content="chat-demo" />
+<title>Demo</title>
+<link href="/static/vanilla-cream/css/bootstrap.css" rel="stylesheet" />
+<link href="/static/vanilla-cream/style.css" rel="stylesheet" />
+<!-- main JS libs -->
+<script src="/static/vanilla-cream/js/libs/modernizr.min.js"></script>
+<script src="/static/vanilla-cream/js/libs/jquery-1.10.0.js"></script>
+<script src="/static/vanilla-cream/js/libs/jquery-ui.min.js"></script>
+<script src="/static/vanilla-cream/js/libs/bootstrap.min.js"></script>
+<!-- scripts -->
+<script src="/static/vanilla-cream/js/general.js"></script>
+<!-- Include all needed stylesheets and scripts here -->
+<script src="/static/vanilla-cream/js/jquery.customInput.js"></script>
+<script src="/static/vanilla-cream/js/custom.js"></script>
+<script src="/static/vanilla-cream/js/jquery.mousewheel.js"></script>
+<script src="/static/vanilla-cream/js/jquery.jscrollpane.min.js"></script>
 </head>
 <body>
-	<div>
-		<table border="1px" title="lalal">
-			<tr>
-				<td>昵称</td>
-			</tr>
-			<tr th:each="friend : ${friendList}">
-				<td th:text="${friend.nickname}"></td>
-			</tr>
-		</table>
-	</div>
-	<div>
-		<textarea rows="20" cols="50"></textarea>
-		<br /> 
-		<input type="text" /> 
-		<input type="button" value="send" />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<ul class="row pricing_box price_style2">
+					<li class="price_col col_active price_col_green">
+						<div class="price_item">
+							<div class="inner">
+								<div class="price_col_head">
+									<span class="price"><em>Profile</em></span>
+								</div>
+								<div class="price_col_body clearfix">
+									<div class="price_body_inner">
+										<div class="price_body_top">
+											<p>
+												<strong th:text="${user.useraccount}">NULL</strong>
+											</p>
+											<span th:text="${user.userId}">null</span>
+										</div>
+										<ul>
+											<li>Beijing,China</li>
+											<li>Progammer,Game</li>
+										</ul>
+									</div>
+								</div>
+								<div class="price_col_foot">
+									<div class="sign_up">
+										<a href="#" class="btn btn-large btn-green"
+											onclick="logout();"><span>Logout Now</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div class="scrollbar style4">
+					<div class="inner">
+						<!--place your content here-->
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
+<script th:inline="javascript">
+	function logout() {
+		$.ajax({
+			method : "POST",
+			url : "/common/logout",
+			dataType : "json",
+			success : function(result) {
+				var code = result.code;
+				if (code == 0) {
+					window.location.href = "/common/login";
+				}
+			}
+		});
+	}
+</script>
 </html>

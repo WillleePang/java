@@ -194,7 +194,7 @@ if($players_on_page > 0){
 
 // Placeholders
 if($("[placeholder]").size() > 0) {
-	$.Placeholder.init({ color : "#786e55" });
+	$("[placeholder]").css("color","#786e55");
 }
 
 // Rating Stars

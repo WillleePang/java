@@ -6,16 +6,14 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.willlee.springbootdemo.domain.User;
-
 public class MyInterceptor implements HandlerInterceptor {
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object object) throws Exception {
 		boolean flag = true;
-		User user = (User) request.getSession().getAttribute("user");
-		if (null == user) {
-			response.sendRedirect("toLogin");
+		Object userinfo = request.getSession().getAttribute("chatdemo-user-info");
+		if (userinfo == null) {
+			response.sendRedirect("/common/login");
 			flag = false;
 		} else {
 			flag = true;

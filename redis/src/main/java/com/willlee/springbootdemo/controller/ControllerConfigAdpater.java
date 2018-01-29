@@ -23,7 +23,6 @@ public class ControllerConfigAdpater extends WebMvcConfigurerAdapter {
 	 */
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/toLogin").setViewName("login");
 		super.addViewControllers(registry);
 	}
 
@@ -32,7 +31,8 @@ public class ControllerConfigAdpater extends WebMvcConfigurerAdapter {
 	 */
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns("/**");
+		String[] array = { "/common/login", "/common/register" };
+		registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns(array);
 		super.addInterceptors(registry);
 	}
 }

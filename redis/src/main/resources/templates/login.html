@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="pangwilllee" />
+<meta name="keywords" content="chat-demo" />
+<title>Demo</title>
+<link href="/static/vanilla-cream/css/bootstrap.css" rel="stylesheet" />
+<link href="/static/vanilla-cream/style.css" rel="stylesheet" />
+<!-- main JS libs -->
+<script src="/static/vanilla-cream/js/libs/modernizr.min.js"></script>
+<script src="/static/vanilla-cream/js/libs/jquery-1.10.0.js"></script>
+<script src="/static/vanilla-cream/js/libs/jquery-ui.min.js"></script>
+<script src="/static/vanilla-cream/js/libs/bootstrap.min.js"></script>
+<!-- scripts -->
+<script src="/static/vanilla-cream/js/general.js"></script>
+<!-- Include all needed stylesheets and scripts here -->
+<script src="/static/vanilla-cream/js/jquery.customInput.js"></script>
+<script src="/static/vanilla-cream/js/custom.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-3"></div>
+			<div class="col-sm-6 col-md-6 col-lg-6" style="padding-top: 35%">
+				<div class="widget-container widget_login styled boxed boxed-cream">
+					<div class="inner">
+						<form action="" method="post" class="loginform">
+							<div class="field_text">
+								<label for="user_login2" class="label_title">Email</label> <input
+									type="text" name="useraccount" id="user_login" value=""
+									placeholder="Email" autocomplete="off" /> <span
+									class="input_icon input_email"></span>
+							</div>
+							<div class="field_text">
+								<label for="user_pass2" class="label_title">Password</label> <input
+									type="password" name="password" id="user_password" value=""
+									placeholder="Password" autocomplete="off" /> <span
+									class="input_icon input_pass"></span>
+							</div>
+							<div class="rowSubmit">
+								<span class="btn btn-hover"> <input type="button"
+									name="login-submit" id="login-submit" value="Login Now" />
+								</span> <span class="btn btn-hover"> <input type="button"
+									name="register-submit" id="register-submit"
+									value="Register Now" />
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-md-3 col-lg-3"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var loginform = $(".loginform");
+		$("#login-submit").click(function() {
+			loginform.attr("action", "/common/login");
+			loginform.submit();
+		});
+		$("#register-submit").click(function() {
+			loginform.attr("action", "/common/register");
+			loginform.submit();
+		});
+	});
+</script>
+</html>
