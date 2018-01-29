@@ -19,17 +19,22 @@
 <script src="/static/vanilla-cream/js/custom.js"></script>
 <script src="/static/vanilla-cream/js/jquery.mousewheel.js"></script>
 <script src="/static/vanilla-cream/js/jquery.jscrollpane.min.js"></script>
+<script src="https://cdn.bootcss.com/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="https://cdn.bootcss.com/sockjs-client/1.1.4/sockjs.min.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-3"></div>
+
 			<div class="col-sm-6 col-md-6 col-lg-6">
 				<ul class="row pricing_box price_style2">
 					<li class="price_col col_active price_col_green">
 						<div class="price_item">
 							<div class="inner">
 								<div class="price_col_head">
-									<span class="price"><em>Profile</em></span>
+									<img src="/static/images/headicon/avatar1.png" alt=""> <span
+										class="price"><em>Profile</em></span>
 								</div>
 								<div class="price_col_body clearfix">
 									<div class="price_body_inner">
@@ -56,10 +61,36 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-sm-6 col-md-6 col-lg-6">
-				<div class="scrollbar style4">
-					<div class="inner">
-						<!--place your content here-->
+			<div class="col-sm-3 col-md-3 col-lg-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="comment-list clearfix" id="comments"
+					style="height: 400px; overflow-y: scroll; overflow-x: hidden;">
+					<h2>chat room</h2>
+					<ol style="padding-right: 5px">
+					</ol>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="add-comment boxed gradient" id="addcomments">
+					<div class="add-comment-title">
+						<h3>Leave a message</h3>
+					</div>
+					<div class="comment-form">
+						<div class="form-inner">
+							<div class="field_text field_textarea">
+								<label for="message" class="label_title">Content</label>
+								<textarea cols="30" rows="10" name="message" id="message"
+									class="textarea textarea_middle required gradient"
+									style="outline: none;"></textarea>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="rowSubmit">
+							<span class="btn btn-red link-submit"><input type="button"
+								id="send" value="Send" class="gradient" onclick="sendMessage();"></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -75,10 +106,57 @@
 			success : function(result) {
 				var code = result.code;
 				if (code == 0) {
+					disconnect();
 					window.location.href = "/common/login";
 				}
 			}
 		});
 	}
+
+	function appendContent(messagebody) {
+		var messageJson = JSON.parse(messagebody);
+		var headicon = messageJson.headicon;
+		var useraccount = messageJson.useraccount;
+		var message = messageJson.message;
+		console.log(headicon+" "+useraccount+" "+message);
+		var content = "<li class=\"comment first\">"
+				+ "<div class=\"comment-body gradient\">"
+				+ "<div class=\"comment-arrow\"></div><div class=\"comment-avatar\">"
+				+ "<div class=\"avatar\"><img src=\"/static/images/headicon/"+headicon
+				+"\" alt=\"\"></div></div><div class=\"comment-text\">"
+				+ "<div class=\"comment-author clearfix\">"
+				+ "<a href=\"#\" class=\"link-author\">" + useraccount
+				+ "</a></div><div class=\"comment-entry\">" + message
+				+ "</div></div><div class=\"clear\"></div></div></li>";
+		$("#comments ol").append(content);
+	}
+
+	function connection() {
+		var socket = new SockJS('/endpointSang');
+        stompClient = Stomp.over(socket);
+        stompClient.connect({}, function (frame) {
+            stompClient.subscribe('/topic/getResponse', function (response) {
+				appendContent(response.body);
+            })
+        });
+	}
+
+	function disconnect() {
+		if (stompClient != null) {
+			stompClient.disconnect();
+		}
+	}
+
+	function sendMessage() {
+		var useraccount = [[${user.useraccount}]];
+		var message = $("#message").val();
+		stompClient.send("/sendWebSocketMessage", {}, JSON.stringify({
+			'useraccount' : useraccount,'message':message,'headicon':''
+		}));
+	}
+
+	$(document).ready(function() {
+		connection();
+	});
 </script>
 </html>

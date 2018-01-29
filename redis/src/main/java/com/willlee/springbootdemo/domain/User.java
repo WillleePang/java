@@ -9,6 +9,7 @@ public class User implements Serializable {
 	private String password;
 	private String userId;
 	private String nickname;
+	private String headicon;
 
 	public String getUserId() {
 		return userId;
@@ -40,6 +41,14 @@ public class User implements Serializable {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getHeadicon() {
+		return headicon;
+	}
+
+	public void setHeadicon(String headicon) {
+		this.headicon = headicon;
 	}
 
 }
