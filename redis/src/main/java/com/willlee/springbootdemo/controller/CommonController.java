@@ -94,6 +94,7 @@ public class CommonController {
 			String uuid = RandomUtil.getUUID();
 			user.setNickname(uuid);
 			user.setUserId(uuid);
+			user.setHeadicon("avatar1.png");
 			redisTemplate.opsForValue().set(useraccount, user);
 		}
 		mav.setViewName("/login");
