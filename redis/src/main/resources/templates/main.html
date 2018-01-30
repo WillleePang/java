@@ -7,18 +7,16 @@
 <title>Demo</title>
 <link href="/static/vanilla-cream/css/bootstrap.css" rel="stylesheet" />
 <link href="/static/vanilla-cream/style.css" rel="stylesheet" />
+<link href="/static/mCustomScrollbar/jquery.mCustomScrollbar.css" />
 <!-- main JS libs -->
 <script src="/static/vanilla-cream/js/libs/modernizr.min.js"></script>
 <script src="/static/vanilla-cream/js/libs/jquery-1.10.0.js"></script>
 <script src="/static/vanilla-cream/js/libs/jquery-ui.min.js"></script>
 <script src="/static/vanilla-cream/js/libs/bootstrap.min.js"></script>
-<!-- scripts -->
 <script src="/static/vanilla-cream/js/general.js"></script>
 <!-- Include all needed stylesheets and scripts here -->
 <script src="/static/vanilla-cream/js/jquery.customInput.js"></script>
 <script src="/static/vanilla-cream/js/custom.js"></script>
-<script src="/static/vanilla-cream/js/jquery.mousewheel.js"></script>
-<script src="/static/vanilla-cream/js/jquery.jscrollpane.min.js"></script>
 <script src="https://cdn.bootcss.com/stomp.js/2.3.3/stomp.min.js"></script>
 <script src="https://cdn.bootcss.com/sockjs-client/1.1.4/sockjs.min.js"></script>
 </head>
@@ -65,9 +63,9 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h2>Chat Room</h2>
 				<div class="comment-list clearfix" id="comments"
 					style="height: 400px; overflow-y: scroll; overflow-x: hidden;">
-					<h2>chat room</h2>
 					<ol style="padding-right: 5px">
 					</ol>
 				</div>
@@ -129,6 +127,9 @@
 				+ "</a></div><div class=\"comment-entry\">" + message
 				+ "</div></div><div class=\"clear\"></div></div></li>";
 		$("#comments ol").append(content);
+		var scrollHeight = $("#comments").prop("scrollHeight");
+		$("#comments").scrollTop(scrollHeight);
+		$("#message").prop("value","");
 	}
 
 	function connection() {
