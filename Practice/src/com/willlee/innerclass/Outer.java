@@ -8,18 +8,18 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
 /**
- * javaÄÚ²¿Àà
+ * javaï¿½Ú²ï¿½ï¿½ï¿½
  * 
- * ÄÚ²¿ÀàÊÇÖ¸ÔÚÒ»¸öÍâ²¿ÀàµÄÄÚ²¿ÔÚ¶¨ÒåÒ»¸öÀà ÄÚ²¿Àà×÷ÎªÍâ²¿ÀàµÄÒ»¸ö³ÉÔ±£¬²¢ÇÒÒÀ¸½Íâ²¿Àà¶ø´æÔÚ¡£
- * ÄÚ²¿Àà¿ÉÒÔÎª¾²Ì¬£¬¿ÉÓÃprotectedºÍprivateÐÞÊÎ£¨¶øÍâ²¿Àà²»¿ÉÒÔ£¬Íâ²¿ÀàÖ»ÄÜÓÃpublicºÍdefault£©¡£
- * ·ÖÀà£º³ÉÔ±ÄÚ²¿Àà¡¢¾Ö²¿ÄÚ²¿Àà¡¢¾²Ì¬ÄÚ²¿Àà¡¢ÄäÃûÄÚ²¿Àà¡£
+ * ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ò»ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½â²¿ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¡ï¿½
+ * ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½protectedï¿½ï¿½privateï¿½ï¿½ï¿½Î£ï¿½ï¿½ï¿½ï¿½â²¿ï¿½à²»ï¿½ï¿½ï¿½Ô£ï¿½ï¿½â²¿ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½publicï¿½ï¿½defaultï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½à£ºï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½à¡¢ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½à¡¢ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½à¡¢ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à¡£
  * 
  * @author Administrator
  * 
  */
 public class Outer {
 	/**
-	 * ³ÉÔ±ÄÚ²¿Àà ´úÂë
+	 * ï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	 */
 	private static int i = 1;
 	private int j = 10;
@@ -34,7 +34,7 @@ public class Outer {
 	}
 
 	/**
-	 * Íâ²¿ÀàµÄ·Ç¾²Ì¬·½·¨·ÃÎÊ³ÉÔ±ÄÚ²¿Àà
+	 * ï¿½â²¿ï¿½ï¿½Ä·Ç¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê³ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½
 	 */
 	public void outer_f3() {
 		Inner inner = new Inner();
@@ -42,48 +42,48 @@ public class Outer {
 	}
 
 	/**
-	 * Íâ²¿ÀàµÄ¾²Ì¬·½·¨·ÃÎÊ³ÉÔ±ÄÚ²¿Àà
+	 * ï¿½â²¿ï¿½ï¿½Ä¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê³ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½
 	 */
 	public static void outer_f4() {
-		// step1 ½¨Á¢Íâ²¿Àà¶ÔÏó
+		// step1 ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½
 		Outer outer = new Outer();
-		// step2 ¸ù¾ÝÍâ²¿Àà¶ÔÏó½¨Á¢ÄÚ²¿Àà¶ÔÏó
+		// step2 ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Inner inner = outer.new Inner();
-		// step3 ·ÃÎÊÄÚ²¿Àà·½·¨
+		// step3 ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à·½ï¿½ï¿½
 		inner.inner_f1();
 
 	}
 
 	/**
-	 * ³ÉÔ±ÄÚ²¿Àà ×÷ÎªÍâ²¿ÀàµÄÒ»¸ö³ÉÔ±´æÔÚ£¬ÓëÍâ²¿ÀàµÄÊôÐÔ¡¢·½·¨²¢ÁÐ¡£ ÓÅµã£º
-	 * 1¡¢ÄÚ²¿Àà×÷ÎªÍâ²¿ÀàµÄ³ÉÔ±£¬¿ÉÒÔ·ÃÎÊÍâ²¿ÀàµÄË½ÓÐ³ÉÔ±»òÊôÐÔ¡££¨¼´Ê¹ÉùÃ÷Îªprivate£¬µ«ÊÇ¶ÔÓÚ´¦ÓÚÆäÄÚ²¿µÄÄÚ²¿Àà»¹ÊÇ¿É¼ûµÄ¡££©
-	 * 2¡¢¿ÉÒÔÄÚ²¿Àà¶¨ÒåÔÚÍâ²¿Àà²»¿É·ÃÎÊµÄÊôÐÔ¡£ÕâÑù¾ÍÔÚÍâ²¿ÀàÖÐÊµÏÖÁË±ÈÍâ²¿Ààprivate»¹ÒªÐ¡µÄ¶î·ÃÎÊÈ¨ÏÞ¡£ ×¢Òâ£º
-	 * 1¡¢ÄÚ²¿ÀàÊÇÒ»¸ö±àÒëÊ±µÄ¸ÅÄî£¬Ò»µ©±àÒë³É¹¦£¬¾Í»á³ÉÎªÍêÈ«²»Í¬µÄÁ½¸öÀà¡£
-	 * ¶ÔÓÚÒ»¸öÃûÎªOuterµÄÍâ²¿ÀàºÍÆäÄÚ²¿¶¨ÒåµÄÃûÎªInnerµÄÄÚ²¿Àà¡£±àÒëÍê³Éºó³öÏÖOuter.class ºÍ Outer$Inner.class
-	 * Á½¸öÀà 2¡¢µ±OuterÊÇÒ»¸öprivateÀàÊ±£¬Íâ²¿Àà¶ÔÓÚÆäÍâ²¿·ÃÎÊÊÇË½ÓÐµÄ£¬ËùÒÔ¾ÍÎÞ·¨½¨Á¢Íâ²¿Àà¶ÔÏó£¬½ø¶øÒ²ÎÞ·¨½¨Á¢ÄÚ²¿Àà¶ÔÏó¡£
+	 * ï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½ ï¿½ï¿½Îªï¿½â²¿ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ ï¿½Åµã£º
+	 * 1ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½â²¿ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½Ë½ï¿½Ð³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Îªprivateï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à»¹ï¿½Ç¿É¼ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½
+	 * 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à¶¨ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½à²»ï¿½É·ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Ô¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ë±ï¿½ï¿½â²¿ï¿½ï¿½privateï¿½ï¿½ÒªÐ¡ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½È¨ï¿½Þ¡ï¿½ ×¢ï¿½â£º
+	 * 1ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ä¸ï¿½ï¿½î£¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½Îªï¿½ï¿½È«ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¡£
+	 * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ÎªOuterï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªInnerï¿½ï¿½ï¿½Ú²ï¿½ï¿½à¡£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éºï¿½ï¿½ï¿½ï¿½Outer.class ï¿½ï¿½ Outer$Inner.class
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½Outerï¿½ï¿½Ò»ï¿½ï¿½privateï¿½ï¿½Ê±ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½ÐµÄ£ï¿½ï¿½ï¿½ï¿½Ô¾ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ó£¬½ï¿½ï¿½ï¿½Ò²ï¿½Þ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @author Administrator
 	 * 
 	 */
 	class Inner {
-		// static int inner_i=100; ÄÚ²¿ÀàÖÐ²»ÔÊÐí¶¨Òå¾²Ì¬±äÁ¿£¬ÄÚ²¿Àà×÷ÎªÍâ²¿ÀàµÄÒ»¸ö³ÉÔ±£¬³ÉÔ±ÄÚ²¿²»ÔÊÐí¶¨Òå¾²Ì¬±äÁ¿.
-		int j = 100;// ÄÚ²¿ÀàºÍÍâ²¿ÀàµÄÊµÀý±äÁ¿¿ÉÒÔ¹²´æ
+		// static int inner_i=100; ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å¾²Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½â²¿ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å¾²Ì¬ï¿½ï¿½ï¿½ï¿½.
+		int j = 100;// ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½
 		private int inner_i = 1;
 
 		void inner_f1() {
 			System.out.println(inner_i);
-			System.out.println(j);// ÔÚÄÚ²¿ÀàÖÐ·ÃÎÊÄÚ²¿Àà×Ô¼ºµÄ±äÁ¿Ö±½ÓÊ¹ÓÃ±äÁ¿Ãû
-			System.out.println(this.j);// »òÕßÊ¹ÓÃthis.±äÁ¿Ãû
-			System.out.println(Outer.this.j);// ÔÚÄÚ²¿ÀàÖÐ·ÃÎÊÍâ²¿ÀàÖÐÓëÄÚ²¿ÀàÍ¬ÃûµÄÊµÀý±äÁ¿
-												// ÓÃÍâ²¿ÀàÃû.this.±äÁ¿Ãû
-			System.out.println(k);// Èç¹ûÄÚ²¿ÀàÖÐÃ»ÓÐÓëÍâ²¿ÀàÍ¬ÃûµÄ±äÁ¿£¬Ôò¿ÉÒÔÖ±½ÓÓÃ±äÁ¿Ãû·ÃÎÊÍâ²¿Àà±äÁ¿
+			System.out.println(j);// ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ö±ï¿½ï¿½Ê¹ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println(this.j);// ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½this.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println(Outer.this.j);// ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+												// ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½.this.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println(k);// ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½
 			outer_f1();
 			outer_f2();
 		}
 	}
 
 	/**
-	 * ¾Ö²¿ÄÚ²¿Àà´úÂë
+	 * ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 
 	private int s = 100;
@@ -94,21 +94,21 @@ public class Outer {
 		int i = 1;
 		final int j = 10;
 		/**
-		 * ¾Ö²¿ÄÚ²¿Àà ÔÚ·½·¨ÖÐµÚÒ»µÄÄÚ²¿Àà³ÆÎª¾Ö²¿ÄÚ²¿Àà¡£
-		 * Óë¾Ö²¿±äÁ¿ÀàËÆ£¬ÔÚ¾Ö²¿ÄÚ²¿ÀàÇ°²»¼ÓÐÞÊÎ·ûpublicºÍprivate£¬Æä·¶Î§Îª¶¨ÒåËüµÄ´úÂë¿é ×¢Òâ£º
-		 * 1¡¢ÔÚÀàÍâ²»¿ÉÖ±½ÓÉú²ú¾Ö²¿ÄÚ²¿Àà£¨±£Ö¤¾Ö²¿ÄÚ²¿Àà¶ÔÍâÊÇ²»¿É¼ûµÄ£©¡£
-		 * 2¡¢ÒªÏëÊ¹ÓÃ¾Ö²¿ÄÚ²¿ÀàÊ±ÐèÒªÉú²ú¶ÔÏó£¬¶ÔÏóµ÷ÓÃ·½·¨£¬ÔÚ·½·¨ÖÐ²ÅÄÜµ÷ÓÃ¾Ö²¿ÄÚ²¿Àà¡£
-		 * 3¡¢Í¨¹ýÄÚ²¿ÀàºÍ½Ó¿Ú´ïµ½Ò»¸öÇ¿ÖÆµÄÈõñîºÏ£¬ÓÃ¾Ö²¿ÄÚ²¿ÀàÀ´ÊµÏÖ½Ó¿Ú£¬²¢ÔÚ·½·¨ÖÐ·µ»Ø½Ó¿ÚÀàÐÍ£¬Ê¹¾Ö²¿ÄÚ²¿Àà²»¿É¼û£¬ÆÁ±ÎÊµÏÖÀàµÄ¿É¼ûÐÔ¡£
+		 * ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ò»ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Îªï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½à¡£
+		 * ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½Ú¾Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î·ï¿½publicï¿½ï¿½privateï¿½ï¿½ï¿½ä·¶Î§Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ ×¢ï¿½â£º
+		 * 1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²»ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½à£¨ï¿½ï¿½Ö¤ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½É¼ï¿½ï¿½Ä£ï¿½ï¿½ï¿½
+		 * 2ï¿½ï¿½Òªï¿½ï¿½Ê¹ï¿½Ã¾Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬¶ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½Üµï¿½ï¿½Ã¾Ö²ï¿½ï¿½Ú²ï¿½ï¿½à¡£
+		 * 3ï¿½ï¿½Í¨ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Í½Ó¿Ú´ïµ½Ò»ï¿½ï¿½Ç¿ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½Ã¾Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½Ø½Ó¿ï¿½ï¿½ï¿½ï¿½Í£ï¿½Ê¹ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½à²»ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Ä¿É¼ï¿½ï¿½Ô¡ï¿½
 		 * 
 		 * @author Administrator
 		 * 
 		 */
 		class Inner {
-			int s = 300;// ¿ÉÒÔ¶¨ÒåÓëÍâ²¿ÀàÍ¬ÃûµÄ±äÁ¿
+			int s = 300;// ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
 
-			// static int m=20;²»¿ÉÒÔ¶¨Òå¾²Ì¬±äÁ¿
+			// static int m=20;ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å¾²Ì¬ï¿½ï¿½ï¿½ï¿½
 			/**
-			 * ÄÚ²¿Àà¹¹Ôìº¯Êý
+			 * ï¿½Ú²ï¿½ï¿½à¹¹ï¿½ìº¯ï¿½ï¿½
 			 */
 			Inner(int k) {
 				inner_f(k);
@@ -117,16 +117,16 @@ public class Outer {
 			int inner_i = 100;
 
 			/**
-			 * ÄÚ²¿ÀàµÄ·½·¨
+			 * ï¿½Ú²ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
 			 * 
 			 * @param k
 			 */
 			void inner_f(int k) {
-				System.out.println(out_i);// Èç¹ûÄÚ²¿ÀàÃ»ÓÐÓëÍâ²¿ÀàÍ¬ÃûµÄ±äÁ¿£¬ÔÚÄÚ²¿ÀàÖÐ¿ÉÒÔÖ±½Ó·ÃÎÊÍâ²¿ÀàµÄÊµÀý±äÁ¿
-				System.out.println(j);// ¿ÉÒÔ·ÃÎÊÍâ²¿ÀàµÄ¾Ö²¿±äÁ¿£¨¼´·½·¨ÄÚµÄ±äÁ¿£¬µ«ÊÇ±äÁ¿±ØÐëÊÇfinal£©
-				System.out.println(s);// Èç¹ûÄÚ²¿ÀàÖÐÓÐÓëÍâ²¿ÀàÍ¬ÃûµÄ±äÁ¿£¬Ö±½ÓÓÃ±äÁ¿Ãû·ÃÎÊµÄÊÇÄÚ²¿ÀàµÄ±äÁ¿
-				System.out.println(this.s);// ÓÃthis.±äÁ¿Ãû ·ÃÎÊµÄÒ²ÊÇÄÚ²¿Àà±äÁ¿
-				System.out.println(Outer.this.s);// /ÓÃÍâ²¿ÀàÃû.this.ÄÚ²¿Àà±äÁ¿Ãû ·ÃÎÊµÄÊÇÍâ²¿Àà±äÁ¿
+				System.out.println(out_i);// ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½Ö±ï¿½Ó·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				System.out.println(j);// ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä¾Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÚµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½finalï¿½ï¿½
+				System.out.println(s);// ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+				System.out.println(this.s);// ï¿½ï¿½this.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Êµï¿½Ò²ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				System.out.println(Outer.this.s);// /ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½.this.ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½
 			}
 		}
 
@@ -134,7 +134,7 @@ public class Outer {
 	}
 
 	/**
-	 * ¾²Ì¬ÄÚ²¿Àà´úÂë ×¢Òâ£º Ç°ÈýÖÖÄÚ²¿ÀàÓë±äÁ¿ÀàËÆ£¬ËùÒÔ¿ÉÒÔ¶ÔÕÕ²Î¿¼±äÁ¿
+	 * ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ×¢ï¿½â£º Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½Ô¶ï¿½ï¿½Õ²Î¿ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	private static int a = 1;
 	private int b = 10;
@@ -148,11 +148,11 @@ public class Outer {
 	}
 
 	/**
-	 * ¾²Ì¬ÄÚ²¿Àà ¾²Ì¬ÄÚ²¿Àà¿ÉÒÔÊ¹ÓÃpublic£¬protected£¬privateÐÞÊÎ£¬¾²Ì¬ÄÚ²¿ÀàÖÐ¿ÉÒÔ¶¨Òå¾²Ì¬ºÍ·Ç¾²Ì¬µÄ³ÉÔ±¡£ ×¢Òâ£º
-	 * Ò»¸ö¾²Ì¬ÄÚ²¿Àà²»ÐèÒªÒ»¸öÍâ²¿ÀàµÄ³ÉÔ±£ºÖ»ÊÇ¾²Ì¬ÄÚ²¿ÀàºÍ³ÉÔ±ÄÚ²¿ÀàµÄÇø±ð¡£¾²Ì¬ÄÚ²¿ÀàµÄ¶ÔÏó¿ÉÒÔÖ±½ÓÉú³É Outer.Inner2 in=new
-	 * Outer.Inner2(); ÕâÊµ¼ÊÉÏ¾²Ì¬ÄÚ²¿Àà³ÉÎªÁËÒ»¸ö¶¥¼¶Àà¡£ ¾²Ì¬ÄÚ²¿Àà²»¿ÉÓÃprivateÀ´½øÐÐ¶¨Òå¡£
-	 * µ±ÀàÓë½Ó¿Ú£¨»òÕßÊÇ½Ó¿ÚÓë½Ó¿Ú£©·¢Éú·½·¨ÃüÃû³åÍ»µÄÊ±ºò£¬´ËÊ±±ØÐëÊ¹ÓÃÄÚ²¿ÀàÀ´ÊµÏÖ¡£ÓÃ½Ó¿Ú²»ÄÜÍêÈ«µØÊµÏÖ¶à¼Ì³Ð£¬ÓÃ½Ó¿ÚÅäºÏÄÚ²¿Àà²ÅÄÜÊµÏÖÕæÕýµÄ¶à¼Ì³Ð¡£
-	 * Àý×Ó£º
+	 * ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½ ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½publicï¿½ï¿½protectedï¿½ï¿½privateï¿½ï¿½ï¿½Î£ï¿½ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½Ô¶ï¿½ï¿½å¾²Ì¬ï¿½Í·Ç¾ï¿½Ì¬ï¿½Ä³ï¿½Ô±ï¿½ï¿½ ×¢ï¿½â£º
+	 * Ò»ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½à²»ï¿½ï¿½ÒªÒ»ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½Ö»ï¿½Ç¾ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½Í³ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ð¡£¾ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Outer.Inner2 in=new
+	 * Outer.Inner2(); ï¿½ï¿½Êµï¿½ï¿½ï¿½Ï¾ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¡£ ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½à²»ï¿½ï¿½ï¿½ï¿½privateï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½å¡£
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç½Ó¿ï¿½ï¿½ï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½Ê±ï¿½ò£¬´ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¡ï¿½ï¿½Ã½Ó¿Ú²ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Êµï¿½Ö¶ï¿½Ì³Ð£ï¿½ï¿½Ã½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½Ì³Ð¡ï¿½
+	 * ï¿½ï¿½ï¿½Ó£ï¿½
 	 * class People{ run(); } 
 	 * interface Machine{ run(); } 
 	 * class Robot extends People implement Machine
@@ -165,24 +165,24 @@ public class Outer {
 		int inner_j = 200;
 
 		static void inner_f1() {
-			System.out.println("Outer.a:" + a); // ¾²Ì¬ÄÚ²¿ÀàÖ»ÄÜ·ÃÎÊÍâ²¿ÀàµÄ¾²Ì¬³ÉÔ±
-			outer_f6();// °üÀ¨¾²Ì¬±äÁ¿ºÍ¾²Ì¬·½·¨
+			System.out.println("Outer.a:" + a); // ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½Ö»ï¿½Ü·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä¾ï¿½Ì¬ï¿½ï¿½Ô±
+			outer_f6();// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Í¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
 		}
 
 		void inner_f2() {
-			// System.out.println("Outer.b:"+b); ¾²Ì¬ÄÚ²¿Àà²»ÄÜ·ÃÎÊÍâ²¿ÀàµÄ·Ç¾²Ì¬³ÉÔ±
-			// outer_f7(); X °üÀ¨·Ç¾²Ì¬±äÁ¿ºÍ·Ç¾²Ì¬·½·¨
+			// System.out.println("Outer.b:"+b); ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½à²»ï¿½Ü·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä·Ç¾ï¿½Ì¬ï¿½ï¿½Ô±
+			// outer_f7(); X ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Í·Ç¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
 		}
 	}
 
 	/**
-	 * Íâ²¿Àà·ÃÎÊ¾²Ì¬ÄÚ²¿Àà
+	 * ï¿½â²¿ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½
 	 */
 	public void outer_f8() {
-		// Íâ²¿ÄÚ·ÃÎÊÄÚ²¿ÀàµÄ¾²Ì¬³ÉÔ±£ºÄÚ²¿Àà.¾²Ì¬³ÉÔ±
+		// ï¿½â²¿ï¿½Ú·ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä¾ï¿½Ì¬ï¿½ï¿½Ô±ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½.ï¿½ï¿½Ì¬ï¿½ï¿½Ô±
 		System.out.println(Inner2.inner_i);
 		Inner2.inner_f1();
-		// Íâ²¿Àà·ÃÎÊÄÚ²¿Àà·Ç¾²Ì¬³ÉÔ±£ºÊµÀý»¯ÄÚ²¿Àà
+		// ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ç¾ï¿½Ì¬ï¿½ï¿½Ô±ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
 		Inner2 inner = new Inner2();
 		System.out.println(inner.inner_j);
 		inner.inner_f2();
@@ -190,11 +190,11 @@ public class Outer {
 	}
 
 	/**
-	 * ÄäÃûÄÚ²¿Àà
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
 	 * 
-	 * ÄäÃûÄÚ²¿Àà¾ÍÊÇÃ»ÓÐÃû×ÖµÄÄÚ²¿Àà¡£ ×¢Òâ£º 1¡¢ÄäÃûÄÚ²¿Àà²»ÄÜÓÐ¹¹Ôìº¯Êý 2¡¢ÄäÃûÄÚ²¿Àà²»ÄÜ¶¨ÒåÈÎºÎ¾²Ì¬³ÉÔ±¡¢·½·¨ºÍÀà
-	 * 3¡¢ÄäÃûÄÚ²¿Àà²»ÄÜÊÇpublic¡¢protected¡¢private¡¢static 4¡¢Ö»ÄÜ´´½¨ÄäÃûÄÚ²¿ÀàµÄÒ»¸öÊµÀý
-	 * 5¡¢Ò»¸öÄäÃûÄÚ²¿ÀàÒ»¶¨ÊÇÔÚnewºóÃæ£¬ÓÃÆäÒþº¬ÊµÏÖÒ»¸ö½Ó¿Ú»òÊµÏÖÒ»¸öÀà¡£ 6¡¢ÒòÄäÃûÄÚ²¿ÀàÎª¾Ö²¿ÄÚ²¿Àà£¬ËùÒÔ¾Ö²¿ÄÚ²¿ÀàµÄËùÓÐÏÞÖÆ¶¼¶ÔÆäÉúÐ§
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ú²ï¿½ï¿½à¡£ ×¢ï¿½â£º 1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à²»ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ìº¯ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à²»ï¿½Ü¶ï¿½ï¿½ï¿½ï¿½ÎºÎ¾ï¿½Ì¬ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * 3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à²»ï¿½ï¿½ï¿½ï¿½publicï¿½ï¿½protectedï¿½ï¿½privateï¿½ï¿½static 4ï¿½ï¿½Ö»ï¿½Ü´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Êµï¿½ï¿½
+	 * 5ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½newï¿½ï¿½ï¿½æ£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ó¿Ú»ï¿½Êµï¿½ï¿½Ò»ï¿½ï¿½ï¿½à¡£ 6ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Îªï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½à£¬ï¿½ï¿½ï¿½Ô¾Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
 	 * 
 	 * @return
 	 */
@@ -203,15 +203,14 @@ public class Outer {
 		return new Contents() {
 			private int i = 10;
 
-			@Override
 			public int getValue() {
 				// TODO Auto-generated method stub
 				return i;
 			}
 
-		};// ÔÚÄäÃûÄÚ²¿ÀàÄ©Î²µÄ·ÖºÅ£¬²¢²»ÊÇÓÃÀ´±ê¼Ç´ËÄÚ²¿Àà½áÊø£¨C++ÖÐÊÇÄÇÑù£©¡£Êµ¼ÊÉÏ£¬Ëü±ê¼ÇµÄÊÇ±í´ïÊ½µÄ½áÊø£¬Ö»²»¹ýÕâ¸ö±í´ïÊ½ÕýÇÉ°üº¬ÁËÄÚ²¿Àà°ÕÁË¡£Òò´Ë£¬ÕâÓë±ðµÄµØ·½Ê¹ÓÃµÄ·ÖºÅÊÇÒ»ÖÂµÄ¡£
+		};// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä©Î²ï¿½Ä·ÖºÅ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½C++ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½Ç±ï¿½ï¿½Ê½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½É°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Ë¡ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÄµØ·ï¿½Ê¹ï¿½ÃµÄ·Öºï¿½ï¿½ï¿½Ò»ï¿½ÂµÄ¡ï¿½
 
-		// µÈÍ¬ÓÚ
+		// ï¿½ï¿½Í¬ï¿½ï¿½
 		// class MyContents implements Contents {
 		// private int i=10;
 		// @Override
@@ -228,18 +227,18 @@ public class Outer {
 		final int z = x;
 		return new Wrapping(x) {
 			public void dest() {
-				System.out.println("outer_f10: " + z);// ¿ÉÒÔ·ÃÎÊÍâ²¿ÄÚµÄ¾Ö²¿±äÁ¿£¨¼´·½·¨ÄÚµÄ±äÁ¿£¬µ«ÊÇ±äÁ¿±ØÐëÊÇfinal£©
+				System.out.println("outer_f10: " + z);// ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ÚµÄ¾Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÚµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½finalï¿½ï¿½
 			}
 		};
 	}
 
 	public static void main(String[] args) {
 
-		outer_f4();// ³ÉÔ±ÄÚ²¿Àà
-		new Outer().outer_f5(4);// ¾Ö²¿ÄÚ²¿Àà
-		new Outer().outer_f8();// ¾²Ì¬ÄÚ²¿Àà
-		new Outer().outer_f9().getValue();// ÄäÃûÄÚ²¿Àà
-		new Outer().outer_f10(8).dest();// ÄäÃûÄÚ²¿Àà
+		outer_f4();// ï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½
+		new Outer().outer_f5(4);// ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
+		new Outer().outer_f8();// ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½
+		new Outer().outer_f9().getValue();// ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
+		new Outer().outer_f10(8).dest();// ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
 		InnerClassTest obj = new InnerClassTest();
 		obj.launchFrame();
 	}
@@ -247,7 +246,7 @@ public class Outer {
 }
 
 /**
- * Ò»¸öÄÚ²¿ÀàµÄ¼òµ¥Ó¦ÓÃ
+ * Ò»ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä¼ï¿½Ó¦ï¿½ï¿½
  * 
  * @author Administrator
  * 
@@ -265,9 +264,9 @@ class InnerClassTest {
 		Label label = new Label("Click and drag the mouse");
 		f.add(label, BorderLayout.NORTH);
 		f.add(tf, BorderLayout.SOUTH);
-		// ³ÉÔ±ÄÚ²¿Àà
-		f.addMouseMotionListener(new MyMouseMotionListener());/* ²ÎÊýÎªÄÚ²¿Àà¶ÔÏó */
-		// µÈÐ§ ÄäÃûÄÚ²¿Àà
+		// ï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½
+		f.addMouseMotionListener(new MyMouseMotionListener());/* ï¿½ï¿½ï¿½ï¿½Îªï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+		// ï¿½ï¿½Ð§ ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
 		// f.addMouseMotionListener(new MouseMotionAdapter(){
 		// public void mouseDragged(MouseEvent e) {
 		// String s="Mouse dragging: x="+e.getX()+"Y="+e.getY();
@@ -279,13 +278,13 @@ class InnerClassTest {
 		f.setVisible(true);
 	}
 
-	class MyMouseMotionListener extends MouseMotionAdapter { /* ÄÚ²¿Àà¿ªÊ¼ */
+	class MyMouseMotionListener extends MouseMotionAdapter { /* ï¿½Ú²ï¿½ï¿½à¿ªÊ¼ */
 		public void mouseDragged(MouseEvent e) {
 			String s = "Mouse dragging: x=" + e.getX() + "Y=" + e.getY();
 			tf.setText(s);
 		}
 	}
-	// ÄÚ²¿Àà½áÊø
+	// ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 }
 
 interface Contents {

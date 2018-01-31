@@ -4,14 +4,13 @@ public class DBQuery implements IDBQuery {
 
 	public DBQuery() {
 		try {
-			Thread.sleep(1000);// ¼ÙÉèÊý¾Ý¿âÁ¬½ÓµÈºÄÊ±²Ù×÷
+			Thread.sleep(1000);// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ÓµÈºï¿½Ê±ï¿½ï¿½ï¿½ï¿½
 		} catch (InterruptedException ex) {
 			ex.printStackTrace();
 		}
-		System.out.println("³õÊ¼»¯DBQueryÍê±Ï");
+		System.out.println("ï¿½ï¿½Ê¼ï¿½ï¿½DBQueryï¿½ï¿½ï¿½");
 	}
 
-	@Override
 	public String request() {
 		// TODO Auto-generated method stub
 		return "request string";

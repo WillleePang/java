@@ -1,18 +1,18 @@
 package com.willlee.sourcecode.Enum;
 
 public enum Color implements Behaviour {
-	RED("ºìÉ«", 1), GREEN("ÂÌÉ«", 2), BLANK("°×É«", 3), YELLO("»ÆÉ«", 4);
-	// ³ÉÔ±±äÁ¿
+	RED("ï¿½ï¿½É«", 1), GREEN("ï¿½ï¿½É«", 2), BLANK("ï¿½ï¿½É«", 3), YELLO("ï¿½ï¿½É«", 4);
+	// ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
 	private String name;
 	private int index;
 
-	// ¹¹Ôì·½·¨
+	// ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
 	private Color(String name, int index) {
 		this.name = name;
 		this.index = index;
 	}
 
-	// ÆÕÍ¨·½·¨
+	// ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
 	public static String getName(int index) {
 		for (Color c : Color.values()) {
 			if (c.getIndex() == index) {
@@ -22,7 +22,7 @@ public enum Color implements Behaviour {
 		return null;
 	}
 
-	// get set ·½·¨
+	// get set ï¿½ï¿½ï¿½ï¿½
 	public String getName() {
 		return name;
 	}
@@ -39,19 +39,17 @@ public enum Color implements Behaviour {
 		this.index = index;
 	}
 
-	// ¸²¸ÇtoString·½·¨
+	// ï¿½ï¿½ï¿½ï¿½toStringï¿½ï¿½ï¿½ï¿½
 	@Override
 	public String toString() {
 		return this.index + "_" + this.name;
 	}
 
-	@Override
 	public void print() {
 		System.out.println(this.index + ":" + this.name);
 
 	}
 
-	@Override
 	public String getInfo() {
 		return this.name;
 	}

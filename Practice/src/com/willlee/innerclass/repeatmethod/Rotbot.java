@@ -2,15 +2,13 @@ package com.willlee.innerclass.repeatmethod;
 
 public class Rotbot implements Machine {
 
-	@Override
 	public void run() {
-		System.out.println("»úÆ÷ÈËÅÜ²½");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü²ï¿½");
 	}
 
 	private class humanity implements Human {
-		@Override
 		public void run() {
-			System.out.println("ÈËÀàÅÜ²½");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ü²ï¿½");
 		}
 	}
 

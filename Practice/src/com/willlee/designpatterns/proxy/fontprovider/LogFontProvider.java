@@ -2,7 +2,7 @@ package com.willlee.designpatterns.proxy.fontprovider;
 
 
 /**
- * ¸ø×ÖÌåÌá¹©ÀàÌí¼ÓÈÕÖ¾Êä³ö
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½
  * 
  * @author Administrator
  * 
@@ -15,13 +15,11 @@ public class LogFontProvider implements FontProvider , ImageProvider{
 		this.fontProvider = fontProvider;
 	}
 
-	@Override
 	public void getFont(String name) {
 		System.out.println("log font provider is working!");
 		fontProvider.getFont(name);
 	}
 
-	@Override
 	public void getImage(String name) {
 		System.out.println("log image provider is working!");
 		imageProvider.getImage(name);

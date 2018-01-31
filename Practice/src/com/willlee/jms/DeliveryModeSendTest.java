@@ -14,10 +14,10 @@ import javax.jms.TextMessage;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.command.ActiveMQQueue;
 
+
 public class DeliveryModeSendTest {
 	public static void main(String[] args) throws Exception {
-		ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory(
-				"vm://localhost");
+		ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory();
 		Connection connection = factory.createConnection();
 		connection.start();
 

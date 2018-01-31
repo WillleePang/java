@@ -12,7 +12,6 @@ import javax.jms.TextMessage;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.command.ActiveMQQueue;
-
 public class QueueTest {
 
 	public static void main(String[] args) throws Exception {
@@ -22,13 +21,13 @@ public class QueueTest {
 		Connection connection = factory.createConnection();
 		connection.start();
 
-		// ´´½¨Ò»¸öQueue
+		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Queue
 		Queue queue = new ActiveMQQueue("testQueue");
-		// ´´½¨Ò»¸öSession
+		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Session
 		Session session = connection.createSession(false,
 				Session.AUTO_ACKNOWLEDGE);
 
-		// ×¢²áÏû·ÑÕß1
+		// ×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
 		MessageConsumer comsumer1 = session.createConsumer(queue);
 		comsumer1.setMessageListener(new MessageListener() {
 			public void onMessage(Message m) {
@@ -41,7 +40,7 @@ public class QueueTest {
 			}
 		});
 
-		// ×¢²áÏû·ÑÕß2
+		// ×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
 		MessageConsumer comsumer2 = session.createConsumer(queue);
 		comsumer2.setMessageListener(new MessageListener() {
 			public void onMessage(Message m) {
@@ -55,7 +54,7 @@ public class QueueTest {
 
 		});
 
-		// ´´½¨Ò»¸öÉú²úÕß£¬È»ºó·¢ËÍ¶à¸öÏûÏ¢¡£
+		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½È»ï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
 		MessageProducer producer = session.createProducer(queue);
 		for (int i = 0; i < 10; i++) {
 			producer.send(session.createTextMessage("Message:" + i));

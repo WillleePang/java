@@ -19,7 +19,6 @@ public class LazySingleton implements Runnable {
 		System.out.println("create String");
 	}
 
-	@Override
 	public void run() {
 		long beginTime = System.currentTimeMillis();
 		for (int i = 0; i < 1000000; i++) {

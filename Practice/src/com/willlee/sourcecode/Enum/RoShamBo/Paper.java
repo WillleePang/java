@@ -2,7 +2,6 @@ package com.willlee.sourcecode.Enum.RoShamBo;
 
 public class Paper implements Item {
 
-	@Override
 	public Outcome compete(Item it) {
 		return it.eval(this);
 	}

@@ -1,5 +1,6 @@
 package com.willlee.jms;
 
+
 import javax.jms.Connection;
 import javax.jms.DeliveryMode;
 import javax.jms.JMSException;
@@ -37,7 +38,7 @@ public class JMSCorrelationIDTest {
 	}
 
 	private void setupConsumer(final String name) throws JMSException {
-		// 创建一个消费者，它只接受属于它自己的消息
+		// 锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟竭ｏ拷锟斤拷只锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟皆硷拷锟斤拷锟斤拷息
 		MessageConsumer consumer = session.createConsumer(queue, "receiver='"
 				+ name + "'");
 		consumer.setMessageListener(new MessageListener() {
@@ -46,10 +47,10 @@ public class JMSCorrelationIDTest {
 					MessageProducer producer = session.createProducer(queue);
 					System.out.println(name + " get:"
 							+ ((TextMessage) m).getText());
-					// 回复一个消息
+					// 锟截革拷一锟斤拷锟斤拷息
 					Message replyMessage = session
 							.createTextMessage("Reply from " + name);
-					// 设置JMSCorrelationID为刚才收到的消息的ID
+					// 锟斤拷锟斤拷JMSCorrelationID为锟秸诧拷锟秸碉拷锟斤拷锟斤拷息锟斤拷ID
 					replyMessage.setJMSCorrelationID(m.getJMSMessageID());
 					producer.send(replyMessage);
 				} catch (JMSException e) {
@@ -62,12 +63,12 @@ public class JMSCorrelationIDTest {
 			throws JMSException {
 		MessageProducer producer = session.createProducer(queue);
 		producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
-		// 创建一个消息，并设置一个属性receiver，为消费者的名字。
+		// 锟斤拷锟斤拷一锟斤拷锟斤拷息锟斤拷锟斤拷锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷receiver锟斤拷为锟斤拷锟斤拷锟竭碉拷锟斤拷锟街★拷
 		Message message = session.createTextMessage("Message from " + name);
 		message.setStringProperty("receiver", consumerName);
 		producer.send(message);
 
-		// 等待回复的消息
+		// 锟饺达拷锟截革拷锟斤拷锟斤拷息
 		MessageConsumer replyConsumer = session.createConsumer(queue,
 				"JMSCorrelationID='" + message.getJMSMessageID() + "'");
 		replyConsumer.setMessageListener(new MessageListener() {

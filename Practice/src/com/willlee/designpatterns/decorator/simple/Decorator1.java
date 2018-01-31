@@ -8,11 +8,10 @@ public class Decorator1 implements Sourceble {
 		this.sourceble = sourceble;
 	}
 
-	@Override
 	public void operation() {
-		System.out.println("µÚÒ»¸ö×°ÊÎÆ÷Ç°");
+		System.out.println("ï¿½ï¿½Ò»ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ç°");
 		sourceble.operation();
-		System.out.println("µÚÒ»¸ö×°ÊÎÆ÷ºó");
+		System.out.println("ï¿½ï¿½Ò»ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 
 	}
 

@@ -2,9 +2,8 @@ package com.willlee.designpatterns.decorator.simple;
 
 public class Source implements Sourceble {
 
-	@Override
 	public void operation() {
-		System.out.println("Ô­Ê¼ÀàµÄ·½·¨");
+		System.out.println("Ô­Ê¼ï¿½ï¿½Ä·ï¿½ï¿½ï¿½");
 	}
 
 }

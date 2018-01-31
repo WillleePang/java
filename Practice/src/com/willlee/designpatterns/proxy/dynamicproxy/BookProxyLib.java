@@ -10,7 +10,7 @@ public class BookProxyLib implements MethodInterceptor {
 	private Object target;
 
 	/**
-	 * ´´½¨´úÀí¶ÔÏó
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param target
 	 * @return
@@ -19,19 +19,18 @@ public class BookProxyLib implements MethodInterceptor {
 		this.target = target;
 		Enhancer enhancer = new Enhancer();
 		enhancer.setSuperclass(this.target.getClass());
-		// »Øµ÷·½·¨
+		// ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
 		enhancer.setCallback(this);
-		// ´´½¨´úÀí¶ÔÏó
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		return enhancer.create();
 	}
 
-	@Override
-	// »Øµ÷·½·¨
+	// ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
 	public Object intercept(Object obj, Method method, Object[] args,
 			MethodProxy proxy) throws Throwable {
-		System.out.println("ÊÂÎï¿ªÊ¼");
+		System.out.println("ï¿½ï¿½ï¿½ï¿ªÊ¼");
 		proxy.invokeSuper(obj, args);
-		System.out.println("ÊÂÎï½áÊø");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		return null;
 	}
 }

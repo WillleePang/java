@@ -7,9 +7,8 @@ public class Watcher implements Observer {
 		o.addObserver(this);
 	}
 
-	@Override
 	public void update(Observable arg0, Object arg1) {
-        System.out.println("×´Ì¬·¢Éú¸Ä±ä£º" + ((Watched)arg0).getData());		
+        System.out.println("×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ä£º" + ((Watched)arg0).getData());		
 	}
 
 }

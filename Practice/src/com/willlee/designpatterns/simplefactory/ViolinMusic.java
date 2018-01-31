@@ -2,10 +2,9 @@ package com.willlee.designpatterns.simplefactory;
 
 public class ViolinMusic implements IMusic{
 
-	@Override
 	public void play() {
 		// TODO Auto-generated method stub
-		System.out.println("Ð¡ÌáÇÙÑÝ×à");
+		System.out.println("Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 
 }

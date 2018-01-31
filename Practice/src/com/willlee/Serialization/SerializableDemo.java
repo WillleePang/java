@@ -9,6 +9,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
 import org.apache.commons.io.IOUtils;
 
 public class SerializableDemo {
@@ -74,9 +75,9 @@ public class SerializableDemo {
       IOUtils.closeQuietly(ois);
     }
 
-    // ÐòÁÐ»¯¶Ôµ¥ÀýµÄÆÆ»µ
-    // Í¨¹ý¶ÔSingletonµÄÐòÁÐ»¯Óë·´ÐòÁÐ»¯µÃµ½µÄ¶ÔÏóÊÇÒ»¸öÐÂµÄ¶ÔÏó£¬Õâ¾ÍÆÆ»µÁËSingletonµÄµ¥ÀýÐÔ¡£
-    // ÐòÁÐ»¯»áÍ¨¹ý·´Éäµ÷ÓÃÎÞ²ÎÊýµÄ¹¹Ôì·½·¨´´½¨Ò»¸öÐÂµÄ¶ÔÏó¡£
+    // ï¿½ï¿½ï¿½Ð»ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ»ï¿½
+    // Í¨ï¿½ï¿½ï¿½ï¿½Singletonï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ë·´ï¿½ï¿½ï¿½Ð»ï¿½ï¿½Ãµï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ÂµÄ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ»ï¿½ï¿½ï¿½Singletonï¿½Äµï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
+    // ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ÂµÄ¶ï¿½ï¿½ï¿½
     try {
       // Write Obj to file
       oos = new ObjectOutputStream(new FileOutputStream("tempFile"));

@@ -7,7 +7,6 @@ public class JStackDemo1 {
     }
 }	
 class Thread1 implements Runnable{
-    @Override
     public void run() {
         while(true){
             System.out.println(1);

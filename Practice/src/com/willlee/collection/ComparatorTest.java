@@ -48,7 +48,6 @@ class User1 {
 
 class UserComparator implements Comparator<User1> {
 
-	@Override
 	public int compare(User1 user1, User1 user2) {
 		int age1 = user1.getAge();
 		int age2 = user2.getAge();

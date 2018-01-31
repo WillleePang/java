@@ -17,7 +17,7 @@ public class TreeMapTest {
 		map.put(s3, new StudentDetailInfo(s3));
 		map.put(s4, new StudentDetailInfo(s4));
 
-		// ´òÓ¡·ÖÊýÎ»ÓÚ S4 ºÍ S2 Ö®¼äµÄÈË
+		// ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ S4 ï¿½ï¿½ S2 Ö®ï¿½ï¿½ï¿½ï¿½ï¿½
 		Map<Student, StudentDetailInfo> map1 = ((TreeMap<Student, StudentDetailInfo>) map)
 				.subMap(s4, s2);
 		for (Iterator<Student> iterator = map1.keySet().iterator(); iterator
@@ -27,7 +27,7 @@ public class TreeMapTest {
 		}
 		System.out.println("subMap end");
 
-		// ´òÓ¡·ÖÊý±È s1 µÍµÄÈË
+		// ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ s1 ï¿½Íµï¿½ï¿½ï¿½
 		map1 = ((TreeMap<Student, StudentDetailInfo>) map).headMap(s1);
 		for (Iterator<Student> iterator = map1.keySet().iterator(); iterator
 				.hasNext();) {
@@ -36,7 +36,7 @@ public class TreeMapTest {
 		}
 		System.out.println("subMap end");
 
-		// ´òÓ¡·ÖÊý±È s1 ¸ßµÄÈË
+		// ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ s1 ï¿½ßµï¿½ï¿½ï¿½
 		map1 = ((TreeMap<Student, StudentDetailInfo>) map).tailMap(s1);
 		for (Iterator<Student> iterator = map1.keySet().iterator(); iterator
 				.hasNext();) {
@@ -58,7 +58,6 @@ class Student implements Comparable<Student> {
 		this.score = score;
 	}
 
-	@Override
 	public int compareTo(Student o) {
 		// TODO Auto-generated method stub
 		if (o.score < this.score) {

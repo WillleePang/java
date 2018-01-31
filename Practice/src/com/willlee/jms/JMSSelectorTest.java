@@ -1,5 +1,6 @@
 package com.willlee.jms;
 
+
 import javax.jms.Connection;
 import javax.jms.JMSException;
 import javax.jms.Message;
@@ -26,7 +27,7 @@ public class JMSSelectorTest {
 		Session session = connection.createSession(false,
 				Session.AUTO_ACKNOWLEDGE);
 
-		// Ö»½ÓÊÜº¬ÓÐreceiver = 'A'µÄÐÅÏ¢
+		// Ö»ï¿½ï¿½ï¿½Üºï¿½ï¿½ï¿½receiver = 'A'ï¿½ï¿½ï¿½ï¿½Ï¢
 		MessageConsumer comsumerA = session.createConsumer(queue,
 				"receiver = 'A'");
 		comsumerA.setMessageListener(new MessageListener() {
@@ -39,7 +40,7 @@ public class JMSSelectorTest {
 			}
 		});
 
-		// Ö»½ÓÊÜº¬ÓÐreceiver = 'B'µÄÐÅÏ¢
+		// Ö»ï¿½ï¿½ï¿½Üºï¿½ï¿½ï¿½receiver = 'B'ï¿½ï¿½ï¿½ï¿½Ï¢
 		MessageConsumer comsumerB = session.createConsumer(queue,
 				"receiver = 'B'");
 		comsumerB.setMessageListener(new MessageListener() {

@@ -4,18 +4,17 @@ public class DBQueryProxy implements IDBQuery {
 
 	public DBQueryProxy() {
 		super();
-		System.out.println("³õÊ¼»¯DBQueryProxyÍê±Ï");
+		System.out.println("ï¿½ï¿½Ê¼ï¿½ï¿½DBQueryProxyï¿½ï¿½ï¿½");
 	}
 
 	private DBQuery real = null;
 
-	@Override
 	public String request() {
 		// TODO Auto-generated method stub
-		// ÔÚÕæÕıĞèÒªµÄÊ±ºò²ÅÄÜ´´½¨ÕæÊµ¶ÔÏó£¬´´½¨¹ı³Ì¿ÉÄÜºÜÂı
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ü´ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ó£¬´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¿ï¿½ï¿½Üºï¿½ï¿½ï¿½
 		if (real == null) {
 			real = new DBQuery();
-		}// ÔÚ¶àÏß³Ì»·¾³ÏÂ£¬ÕâÀï·µ»ØÒ»¸öĞé¼ÙÀà£¬ÀàËÆÓÚ Future Ä£Ê½
+		}// ï¿½Ú¶ï¿½ï¿½ß³Ì»ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï·µï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Future Ä£Ê½
 		return real.request();
 	}
 
