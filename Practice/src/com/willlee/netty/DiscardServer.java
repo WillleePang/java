@@ -31,8 +31,6 @@ public class DiscardServer {
 			ChannelFuture f = b.bind(port).sync();
 			f.channel().closeFuture().sync();
 
-		} catch (Exception e) {
-
 		} finally {
 			workerGroup.shutdownGracefully();
 			bossGroup.shutdownGracefully();
