@@ -2,7 +2,6 @@ package com.willlee.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
@@ -38,5 +37,15 @@ public class DiscardServer {
 			workerGroup.shutdownGracefully();
 			bossGroup.shutdownGracefully();
 		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		int port;
+		if (args.length > 0) {
+			port = Integer.parseInt(args[0]);
+		} else {
+			port = 8080;
+		}
+		new DiscardServer(port).run();
 	}
 }
