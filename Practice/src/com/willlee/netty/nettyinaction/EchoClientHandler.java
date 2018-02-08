@@ -18,6 +18,17 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, ByteBuf msg) throws Exception {
 		System.out.println("Client received: " + msg.toString(CharsetUtil.UTF_8)); // 记录接收到的消息
+		if (msg.hasArray()) {
+			byte[] array = msg.array();
+			int offset = msg.arrayOffset() + msg.readerIndex();
+			int length = msg.readableBytes();
+		}
+		if (!msg.hasArray()) { // 1
+			int length = msg.readableBytes();// 2
+			byte[] array = new byte[length]; // 3
+			msg.getBytes(msg.readerIndex(), array); // 4
+		}
+		
 	}
 
 	@Override
