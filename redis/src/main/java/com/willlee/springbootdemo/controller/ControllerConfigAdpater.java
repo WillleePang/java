@@ -14,7 +14,7 @@ public class ControllerConfigAdpater extends WebMvcConfigurerAdapter {
 	 */
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+		// registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
 		super.addResourceHandlers(registry);
 	}
 
@@ -31,8 +31,8 @@ public class ControllerConfigAdpater extends WebMvcConfigurerAdapter {
 	 */
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		String[] array = { "/common/login", "/common/register" };
-		registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns(array);
+		// String[] array = { "/common/login", "/common/register" };
+		// registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns(array);
 		super.addInterceptors(registry);
 	}
 }
