@@ -22,5 +22,4 @@ public class ChatController {
 		message.setHeadicon(user.getHeadicon());
 		return message;
 	}
-
 }
