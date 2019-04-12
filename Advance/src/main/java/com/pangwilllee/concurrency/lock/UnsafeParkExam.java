@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 
 import sun.misc.Unsafe;
 
-@SuppressWarnings("restriction")
 public class UnsafeParkExam {
     public static void main(String[] args) throws Exception {
         Field field = Unsafe.class.getDeclaredField("theUnsafe");

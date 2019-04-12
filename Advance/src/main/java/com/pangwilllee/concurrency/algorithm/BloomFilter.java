@@ -1,4 +1,4 @@
-package com.pangwilllee.datastruct;
+package com.pangwilllee.concurrency.algorithm;
 
 public class BloomFilter {
     /**
