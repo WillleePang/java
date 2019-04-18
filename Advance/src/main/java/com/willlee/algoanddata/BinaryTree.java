@@ -1,4 +1,4 @@
-package com.willlee.datastruct;
+package com.willlee.algoanddata;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

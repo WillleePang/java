@@ -1,4 +1,4 @@
-package com.willlee.concurrency.algorithm;
+package com.willlee.algoanddata;
 
 public class BloomFilter {
     /**
