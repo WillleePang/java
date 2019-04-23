@@ -1,4 +1,4 @@
-package com.willlee.algoanddata;
+package com.willlee.algo;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

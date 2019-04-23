@@ -1,4 +1,4 @@
-package com.willlee.algoanddata;
+package com.willlee.algo;
 
 public class BinarySearchTree<K extends Comparable<K>, V> {
     private class Node {
