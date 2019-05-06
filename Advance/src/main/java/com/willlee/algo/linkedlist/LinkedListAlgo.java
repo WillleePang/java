@@ -1,5 +1,7 @@
 package com.willlee.algo.linkedlist;
 
+import java.util.HashMap;
+
 public class LinkedListAlgo {
     // 单链表反转
     public static Node reverse(Node list) {
@@ -13,7 +15,7 @@ public class LinkedListAlgo {
         return pre;
     }
 
-    // 检测环
+    // 检测环 快慢指针
     public static boolean checkCircle(Node list) {
         if (list == null) {
             return false;
@@ -29,6 +31,29 @@ public class LinkedListAlgo {
             }
         }
         return false;
+    }
+
+    // 环检测 足迹法
+    // 保存足迹信息 效率太差了，数据量大的时候不能使用
+    private static HashMap<Node, Integer> nodeMap = new HashMap<>();
+
+    /**
+     * 判断是否有环 足迹法
+     * 
+     * @param node
+     * @return
+     */
+    public static boolean hasLoopV2(Node node, int index) {
+        if (node == null || node.next == null) {
+            return false;
+        }
+
+        if (nodeMap.containsKey(node)) {
+            return true;
+        } else {
+            nodeMap.put(node, index);
+            return hasLoopV2(node.next, ++index);
+        }
     }
 
     // 有序链表合并
