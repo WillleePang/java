@@ -10,9 +10,10 @@ public class ListNode {
 
     void printList() {
         String s = Integer.toString(this.val);
-        while (next != null) {
-            s += "-" + next.val;
-            next = next.next;
+        ListNode p = next;
+        while (p != null) {
+            s += "-" + p.val;
+            p = p.next;
         }
         System.out.println(s);
     }
