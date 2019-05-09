@@ -6,8 +6,6 @@ import java.util.Arrays;
 
 import sun.misc.Unsafe;
 
-
-@SuppressWarnings("restriction")
 public class UnSafeExam {
 
     public static void main(String[] args) throws InstantiationException, NoSuchFieldException, SecurityException,
