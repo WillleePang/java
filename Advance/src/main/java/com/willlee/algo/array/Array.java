@@ -1,4 +1,4 @@
-package com.willlee.algo;
+package com.willlee.algo.array;
 
 public class Array {
     //定义整型数据data保存数据
