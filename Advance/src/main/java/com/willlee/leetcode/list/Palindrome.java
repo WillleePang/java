@@ -73,6 +73,6 @@ public class Palindrome {
 		b1.next = b2;
 		b2.next = b3;
 		b1.printList();
-		System.out.println(isPalindrome3(b1));
+		System.out.println(isPalindrome1(b1));
 	}
 }
