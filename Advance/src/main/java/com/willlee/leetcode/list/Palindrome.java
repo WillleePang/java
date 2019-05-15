@@ -25,7 +25,7 @@ public class Palindrome {
 		return true;
 	}
 
-	//hash最牛逼的算法
+	// hash
 	public static boolean isPalindrome2(ListNode head) {
 		int lhash = 0, rhash = 0;
 		for (int x = 1; head != null; head = head.next, x *= 11) {
@@ -52,27 +52,27 @@ public class Palindrome {
 	}
 
 	public static void main(String[] args) {
-//		ListNode a1 = new ListNode(3);
-//		ListNode a2 = new ListNode(4);
-//		ListNode a3 = new ListNode(2);
-//		ListNode a4 = new ListNode(1);
-//		ListNode a5 = new ListNode(2);
-//		ListNode a6 = new ListNode(4);
-//		ListNode a7 = new ListNode(3);
-//		a1.next = a2;
-//		a2.next = a3;
-//		a3.next = a4;
-//		a4.next = a5;
-//		a5.next = a6;
-//		a6.next = a7;
-//		a1.printList();
-//		System.out.println(isPalindrome(a1));
+		ListNode a1 = new ListNode(3);
+		ListNode a2 = new ListNode(4);
+		ListNode a3 = new ListNode(2);
+		ListNode a4 = new ListNode(1);
+		ListNode a5 = new ListNode(2);
+		ListNode a6 = new ListNode(4);
+		ListNode a7 = new ListNode(3);
+		a1.next = a2;
+		a2.next = a3;
+		a3.next = a4;
+		a4.next = a5;
+		a5.next = a6;
+		a6.next = a7;
+		a1.printList();
+		System.out.println(isPalindrome2(a1));
 		ListNode b1 = new ListNode(1);
 		ListNode b2 = new ListNode(0);
 		ListNode b3 = new ListNode(1);
 		b1.next = b2;
 		b2.next = b3;
 		b1.printList();
-		System.out.println(isPalindrome(b1));
+		System.out.println(isPalindrome3(b1));
 	}
 }
