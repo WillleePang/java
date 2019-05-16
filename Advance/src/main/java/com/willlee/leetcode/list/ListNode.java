@@ -5,9 +5,21 @@ public class ListNode {
     ListNode next;
     ListNode pre;
     ListNode child;
+    ListNode random;
 
-    ListNode(int x) {
-        val = x;
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+
+    ListNode(int val, ListNode next, ListNode random) {
+        this.val = val;
+        this.next = next;
+        this.random = random;
     }
 
     void printList() {
