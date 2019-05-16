@@ -1,28 +1,28 @@
 package com.willlee.leetcode.list;
 
 public class ListNode {
-    int val;
-    ListNode next;
-    ListNode pre;
-    ListNode child;
-    ListNode random;
+    public int val;
+    public ListNode next;
+    public ListNode pre;
+    public ListNode child;
+    public ListNode random;
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }
 
-    ListNode(int val, ListNode next, ListNode random) {
+    public ListNode(int val, ListNode next, ListNode random) {
         this.val = val;
         this.next = next;
         this.random = random;
     }
 
-    void printList() {
+    public void printList() {
         String s = Integer.toString(this.val);
         ListNode p = next;
         while (p != null) {
@@ -32,7 +32,7 @@ public class ListNode {
         System.out.println(s);
     }
 
-    static ListNode generate(int[] a) {
+    public static ListNode generate(int[] a) {
         ListNode head = new ListNode(-1);
         ListNode pre = null;
         ListNode cur = null;
