@@ -3,11 +3,9 @@ package com.willlee.leetcode.array;
 //leetcode4
 public class FindMedianSortedArrays {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        /**
-         * 如果两个数组的中位数 mid1 < mid2, 则说明合并后的中位数位于 num1.right + num2之间 否则合并后的中位数位于
-         * nums2.right + nums1 之间 (right 是相对于 mid 而言的) getKth
-         * 函数负责找到两个数组合并(假设)后有序的数组中的第 k 个元素, k 从 1 开始计算
-         **/
+        // 如果两个数组的中位数 mid1 < mid2, 则说明合并后的中位数位于 num1.right + num2之间
+        // 否则合并后的中位数位于nums2.right + nums1 之间 (right 是相对于 mid 而言的)
+        // getKth函数负责找到两个数组合并(假设)后有序的数组中的第 k 个元素, k 从 1 开始计算
         if (nums1.length == 0 && nums2.length == 0)
             return 0.0;
         int m = nums1.length, n = nums2.length;
