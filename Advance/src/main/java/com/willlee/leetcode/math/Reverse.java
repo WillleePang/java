@@ -17,6 +17,6 @@ public class Reverse {
     }
 
     public static void main(String[] args) {
-        reverse(101023);
+        System.out.println(reverse(10000000));
     }
 }
