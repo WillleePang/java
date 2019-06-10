@@ -2,7 +2,7 @@ package com.willlee.leetcode.array;
 
 //leetcode53
 public class MaxSubArray {
-    //动态规划
+    // 动态规划
     public int maxSubArray(int[] nums) {
         int res = nums[0];
         int sum = 0;
