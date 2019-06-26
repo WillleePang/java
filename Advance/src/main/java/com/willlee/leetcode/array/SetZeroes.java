@@ -20,6 +20,7 @@ public class SetZeroes {
             }
         }
 
+        //判断当前数组中的数字是否为0，然后把该行该列的首位置成0
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 1; j < matrix[0].length; j++) {
                 if (matrix[i][j] == 0) {
