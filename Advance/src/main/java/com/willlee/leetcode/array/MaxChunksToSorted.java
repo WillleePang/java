@@ -41,5 +41,4 @@ public class MaxChunksToSorted {
         }
         return re;
     }
-
 }
