@@ -57,7 +57,7 @@ public class Leetcode835 {
     // 太慢了，不建议用，但是思路比较清晰
     public int largestOverlap1(int[][] A, int[][] B) {
         int N = A.length;
-        List<Point> A2 = new ArrayList(), B2 = new ArrayList();
+        List<Point> A2 = new ArrayList<Point>(), B2 = new ArrayList<Point>();
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 // 将等于1的点添加进去。
@@ -67,9 +67,9 @@ public class Leetcode835 {
                     B2.add(new Point(i, j));
             }
         }
-        Set<Point> Bset = new HashSet(B2);
+        Set<Point> Bset = new HashSet<Point>(B2);
         int ans = 0;
-        Set<Point> seen = new HashSet();
+        Set<Point> seen = new HashSet<Point>();
         for (Point a : A2) {
             // 对应A中每个1去与B中每个1去重合
             for (Point b : B2) {
