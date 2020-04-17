@@ -14,7 +14,6 @@ public class Leetcode1052 {
                 curr_save -= customers[i - X + 1] * grumpy[i - X + 1];
             }
         }
-
         return satisf + max_save;
     }
 }
