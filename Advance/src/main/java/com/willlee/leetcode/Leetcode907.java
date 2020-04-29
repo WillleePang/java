@@ -6,7 +6,7 @@ import java.util.Stack;
 public class Leetcode907 {
     public int sumSubarrayMins(int[] A) {
         int MOD = 1000000007;
-        Stack<Pair> stack = new Stack<Pair>();
+        Stack<Pair1> stack = new Stack<Pair1>();
         int ans = 0, tmp = 0;
         // 循环将A[i]放入stack中
         for (int i = 0; i < A.length; i++) {
@@ -14,12 +14,12 @@ public class Leetcode907 {
             // 如果stack本身不为空的话，而且栈顶元素值大于即将放入的值
             while (!stack.empty() && stack.peek().val >= A[i]) {
                 // 栈顶元素出栈
-                Pair pop = stack.pop();
+                Pair1 pop = stack.pop();
                 count += pop.count;
                 tmp = tmp - pop.val * pop.count;
             }
             // 新的栈顶元素入栈
-            stack.push(new Pair(A[i], count));
+            stack.push(new Pair1(A[i], count));
             tmp += A[i] * count;
             ans += tmp;
             System.out.println(tmp + " " + ans);
@@ -35,11 +35,11 @@ public class Leetcode907 {
     }
 }
 
-class Pair {
+class Pair1 {
     public int val;
     public int count;
 
-    public Pair(int val, int count) {
+    public Pair1(int val, int count) {
         this.val = val;
         this.count = count;
     }
