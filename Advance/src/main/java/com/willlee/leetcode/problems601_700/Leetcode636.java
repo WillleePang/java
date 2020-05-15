@@ -23,7 +23,6 @@ public class Leetcode636 {
         int prevTime = 0;
         for (String log : logs) {
             String[] parts = log.split(":");
-            //
             if (!stack.isEmpty()) {
                 res[stack.peek()] += Integer.parseInt(parts[2]) - prevTime;
             }
