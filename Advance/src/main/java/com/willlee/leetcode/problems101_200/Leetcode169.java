@@ -1,8 +1,5 @@
 package com.willlee.leetcode.problems101_200;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Leetcode169 {
 
     // leetcode169
