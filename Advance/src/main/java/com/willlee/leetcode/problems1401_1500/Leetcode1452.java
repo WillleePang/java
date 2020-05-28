@@ -46,7 +46,6 @@ public class Leetcode1452 {
     }
 
     public List<Integer> peopleIndexes1(List<List<String>> favoriteCompanies) {
-
         List<Integer> ans = new ArrayList<>();
         // 1. 将字符串转换为数字
         Map<String, Integer> map = new HashMap<>();
