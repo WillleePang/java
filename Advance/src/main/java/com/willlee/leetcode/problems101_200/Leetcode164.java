@@ -1,21 +1,6 @@
 package com.willlee.leetcode.problems101_200;
 
 public class Leetcode164 {
-    public static void main(String[] args) {
-        Leetcode164 a = new Leetcode164();
-        String ss = a.ss("1");
-        System.out.println(ss);
-    }
-
-    @SuppressWarnings("finally")
-    public String ss(String s) {
-        try {
-            return s;
-        } finally {
-            s = null;
-            return s;
-        }
-    }
 
     public int maximumGap(int[] nums) {
         if (nums.length < 2)
