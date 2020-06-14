@@ -1,12 +1,8 @@
 package com.willlee.leetcode.problems101_200;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
-
 import com.willlee.leetcode.utils.TreeNode;
+
+import java.util.*;
 
 public class Leetcode103 {
 
